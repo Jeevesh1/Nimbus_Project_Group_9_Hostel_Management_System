@@ -16,6 +16,7 @@ struct studinfo{
 };
 
 void addstud(struct studinfo s[], int *n);
+void giveroom(struct studinfo s[], int ns, struct roominfo r[], int nr);
 
 int main(){
     return 0;
@@ -30,3 +31,33 @@ void addstud(struct studinfo s[], int *n){
     (*n)++;
 }
 
+void giveroom(struct studinfo s[], int ns, struct roominfo r[], int nr){
+    int sid;
+    printf("Enter Student Id:\n");
+    scanf("%d", &sid);
+    for(int i=0;i<ns;i++) {
+        if(s[i].sid == sid) {
+            if(s[i].rno != -1) {
+                printf("Student already has room %d\n", s[i].rno);
+                return;
+            }
+            
+            for(int j= 0; j<nr;j++){
+                if(r[j].count < 4){
+                    s[i].rno = r[j].rno;
+                    (r[j].count)++;
+                    return;
+                }
+                else{
+                    continue;
+                }
+            }
+            printf("Room not Available\n");
+            return;
+        }
+            
+            
+    }
+
+    printf("student not found");     
+}
