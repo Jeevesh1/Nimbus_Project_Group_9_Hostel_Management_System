@@ -19,6 +19,20 @@ void addstud(struct studinfo s[], int *n);
 void giveroom(struct studinfo s[], int ns, struct roominfo r[], int nr);
 
 int main(){
+
+    struct studinfo studs[MAXS];
+    struct roominfo rooms[MAXR];
+
+    int nr=0, ns=0;
+
+    for (int i=0;i<MAXR; i++){
+        rooms[i].rno = i+1;
+        rooms[i].count = 0;
+        rooms[i].money = 2000;
+    }
+
+    nr = MAXR;
+
     return 0;
 }
 
