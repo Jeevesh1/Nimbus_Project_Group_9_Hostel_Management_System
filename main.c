@@ -17,6 +17,8 @@ struct studinfo{
 
 void addstud(struct studinfo s[], int *n);
 void giveroom(struct studinfo s[], int ns, struct roominfo r[], int nr);
+void showall(struct studinfo s[], int ns, struct roominfo r[], int nr);
+
 
 int main(){
 
@@ -32,6 +34,24 @@ int main(){
     }
 
     nr = MAXR;
+    
+    while(1) {
+        int ch;
+        printf("\n1. Add Student\n2. Give Room\n3. Show All\n4. Exit\n");
+        printf("Enter choice: ");
+        scanf("%d",&ch);
+
+        if(ch==1) {
+            addstud(studs,&ns);
+        } else if(ch==2) {
+            giveroom(studs,ns,rooms,nr);
+        } else if(ch==3) {
+            showall(studs,ns,rooms,nr);
+        } else {
+            break;
+        }
+    }
+
 
     return 0;
 }
