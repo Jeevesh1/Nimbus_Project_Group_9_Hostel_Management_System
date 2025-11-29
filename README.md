@@ -1,7 +1,7 @@
 # Hostel Management System 
 
 **Project:** Hostel Management System  
-**Team / Contributors:** Shivam, Jeevesh Kumar (and other members)  
+**Team / Contributors:** Shivam Tiwari, Jeevesh Kumar, Jaynam Mishra and Piyush Kushwaha  
 **Course / College Project:** PPS-Project 1  
 
 ## Description  
