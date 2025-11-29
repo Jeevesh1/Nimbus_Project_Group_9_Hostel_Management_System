@@ -10,17 +10,13 @@ It helps to manage hostel data — for example: student records, room assignment
 The goal is to provide college admin / hostel-incharge a quick and easy system to track hostel-related information.  
 
 ## Features / Functionalities  
-- Add new student / tenant.  
-- Delete student / tenant.  
-- Update student / tenant information.  
-- Allocate rooms / beds.  
-- Release rooms / beds.  
+- Add new student 
+- Delete student  
+- Update student   
+- Allocate rooms  
+- Release rooms   
 - View list of current hostel residents.  
 - Search student by ID / name.  
-- Basic validation (where applicable).  
-- Any other feature you implemented: e.g. fee management, leave/permission status, occupancy report, etc.  
-
-*(You should list here **all** the functions your team has implemented so far.)*  
 
 ## How to Compile & Run  
 1. Clone the repository:  
