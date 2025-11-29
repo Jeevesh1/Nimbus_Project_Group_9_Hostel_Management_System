@@ -75,3 +75,26 @@ void giveroom(struct studinfo s[], int ns, struct roominfo r[], int nr){
 
     printf("student not found");     
 }
+
+void showall(struct studinfo s[], int ns, struct roominfo r[], int nr){
+    int i;
+    printf("\n--- Student List ---\n");
+    for(i=0;i<ns;i++) {
+        printf("ID:%d Name:%s ", s[i].sid, s[i].sname);
+        if(s[i].rno==-1) {
+            printf("Room:Not given\n");
+        } else {
+            printf("Room:%d\n", s[i].rno);
+        }
+    }
+
+    printf("\n--- Room List ---\n");
+    for(i=0;i<nr;i++) {
+        printf("Room:%d Rent:%d ", r[i].rno, r[i].money);
+        if(r[i].count==0) {
+            printf("Status:Empty\n");
+        } else {
+            printf("Status:Taken, No. of people: %d\n", r[i].count);
+        }
+    }
+}
